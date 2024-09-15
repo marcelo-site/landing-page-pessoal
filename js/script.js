@@ -115,6 +115,6 @@ prev.addEventListener("click", changePrev);
 next.addEventListener("click", changeNext);
 
 window.addEventListener("DOMContentLoaded", () => {
-  certificate.src = `/img/certificates/${certs[0].title}.webp`;
+  certificate.src = `img/certificates/${certs[0].title}.webp`;
   btnValidate.href = certs[0].baseUrlValidate + certs[0].code;
 });
