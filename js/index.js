@@ -90,7 +90,7 @@ function change(n, className) {
   count.innerText = n + 1;
   btnValidate.href = certs[n].baseUrlValidate + certs[n].code;
   setTimeout(() => {
-    certificate.src = `/img/certificates/${certs[n].title}.webp`;
+    certificate.src = `img/certificates/${certs[n].title}.webp`;
   }, 250);
 
   setTimeout(() => {
