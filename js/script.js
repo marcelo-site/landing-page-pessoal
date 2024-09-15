@@ -12,12 +12,12 @@ const validateUdemy = "https://www.udemy.com/certificate/";
 
 const certs = [
   {
-    title: "Curso-HTML5-e-CSS3-módulo-2-de-5-[40-HORAS]",
+    title: "Curso-HTML5-e-CSS3-modulo-2-de-5-[40-HORAS]",
     baseUrlValidate: validateCursoEmVideo,
     code: "45271-E776-7",
   },
   {
-    title: "Curso-HTML5-e-CSS3-módulo-3-de-5-[40-HORAS]",
+    title: "Curso-HTML5-e-CSS3-modulo-3-de-5-[40-HORAS]",
     baseUrlValidate: validateCursoEmVideo,
     code: "45271-15678-2",
   },
