@@ -1,0 +1,412 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --main-color: #2828a8;
+  --main-color: #2c2cff;
+  --main-color: #2020d8;
+  --secondrary-color: #2c2cff;
+  --main-text-color: #fff;
+  --border-color: #999;
+  --bio-bg-color: #1e2a3a;
+  --bio-bg-color: #1c2734;
+  --bio-border-color: #293544;
+  --about-bg-color: #111821;
+  --about-bg-color: #131c27;
+}
+
+p {
+  line-height: 1.25;
+  font-size: 18px;
+}
+
+/* General */
+.highlight {
+  color: var(--secondrary-color);
+}
+
+#container {
+  display: grid;
+  grid-template-areas:
+    "aside main"
+    ". footer";
+  grid-template-rows: 1fr 40px;
+  grid-template-columns: 300px 1fr;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--main-text-color);
+}
+
+main {
+  overflow-x: hidden;
+  grid-area: main;
+  padding-bottom: 2rem;
+  background-color: var(--about-bg-color);
+}
+
+#bio-container {
+  grid-area: aside;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100vh;
+  background-color: var(--bio-bg-color);
+  text-align: center;
+  padding: 30px 12px;
+  border-right: 5px solid var(--bio-border-color);
+}
+
+.about-container {
+  background-color: var(--about-bg-color);
+  padding: 50px;
+}
+
+/* Bio container */
+#bio-container h2 {
+  margin-bottom: 25px;
+}
+
+#bio-container p {
+  margin-bottom: 20px;
+}
+
+#bio-container #welcome-text {
+  font-weight: bold;
+}
+
+#bio-image {
+  width: 175px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+#social-container li {
+  flex: 1 1 0;
+  max-width: 50px;
+}
+
+#social-container li a {
+  color: white;
+  font-size: 30px;
+}
+
+#email-container {
+  display: flex;
+  justify-content: center;
+}
+
+#email-container ion-icon,
+#email-container a {
+  flex: 1 1 0;
+}
+
+#email-container a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  max-width: 225px;
+}
+
+#email-container ion-icon {
+  color: var(--main-color);
+  font-size: 20px;
+  margin-right: 5px;
+  max-width: 20px;
+}
+
+/* about container */
+.name {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+#title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.description {
+  max-width: 75%;
+  margin-bottom: 10px;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--main-text-color);
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  margin: 25px 0;
+  padding: 12px 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.btn ion-icon,
+.btn span {
+  flex: 1 1 0;
+}
+
+.btn ion-icon {
+  font-size: 20px;
+  max-width: 20px;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+#btn-validate {
+  width: 240px;
+  margin: 1rem auto;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title-main {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  border-top: 1px solid var(--border-color);
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.skills-box {
+  flex: 1 1 33%;
+  max-width: 33%;
+  margin-bottom: 35px;
+}
+
+.skills-title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  padding-left: 10px;
+  border-left: 5px solid var(--main-color);
+}
+
+.skills-box i {
+  font-size: 45px;
+  margin-right: 10px;
+}
+
+.container-certificates {
+  position: relative;
+  max-width: 680px;
+  height: 100%;
+}
+
+.container-certificates span {
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  background: var(--about-bg-color);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  right: -1rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid wheat;
+  z-index: 99;
+}
+
+.container-certificates span svg {
+  width: 20px;
+  height: 20px;
+  font-weight: 600;
+}
+.container-certificates span#prev {
+  left: -1rem;
+}
+
+.container-certificates img {
+  width: 100%;
+  max-width: 640px;
+}
+
+.alternate-prev {
+  animation-name: prev;
+  animation-duration: 0.5s;
+}
+
+.alternate-next {
+  animation-name: next;
+  animation-duration: 0.5s;
+}
+
+.control-certificates {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.control-certificates p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@keyframes next {
+  33% {
+    opacity: 0.5;
+  }
+  49% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  51% {
+    transform: translate(100%);
+  }
+  66% {
+    opacity: 0.5;
+  }
+  96% {
+    transform: translateX(-4%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes prev {
+  33% {
+    opacity: 0.5;
+  }
+  49% {
+    opacity: 0;
+    transform: translate(100%);
+  }
+  51% {
+    transform: translate(-100%);
+  }
+  66% {
+    opacity: 0.5;
+  }
+  96% {
+    transform: translateX(4%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.btn-projects {
+  margin: 20px 0;
+  width: 150px;
+}
+
+footer {
+  background: var(--bio-bg-color);
+  text-align: center;
+  padding: 0.5rem;
+  height: 40px;
+  grid-area: footer;
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+footer a {
+  color: inherit;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  p {
+    line-height: 1.1;
+    font-size: 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  #container {
+    display: block;
+  }
+
+  #bio-container {
+    position: static;
+    width: 100vw;
+    height: auto;
+    border-right: none;
+    border-bottom: 5px solid var(--bio-border-color);
+  }
+
+  #bio-container h2 {
+    display: none;
+  }
+
+  #bio-container p {
+    max-width: 60%;
+    margin: 10px auto;
+  }
+
+  .about-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-container .description {
+    margin: 10px auto;
+    max-width: 100%;
+    line-height: 24px;
+  }
+
+  .btn-projects {
+    margin: 20px auto;
+    width: 150px;
+  }
+
+  .skills-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .skills-box i {
+    font-size: 60px;
+  }
+  .control-certificates {
+    gap: 0;
+  }
+}
