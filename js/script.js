@@ -27,7 +27,7 @@ const certs = [
     code: "45271-D263-A",
   },
   {
-    title: "CURSO-HTML5-e-CSS3-MÓDULO-1-DE-5-[40-HORAS]",
+    title: "CURSO-HTML5-e-CSS3-MODULO-1-DE-5-[40-HORAS]",
     baseUrlValidate: validateCursoEmVideo,
     code: "45271-C9E9-5",
   },

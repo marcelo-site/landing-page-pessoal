@@ -22,7 +22,7 @@
 }
 
 p {
-  line-height: 1.25;
+  line-height: 1.5;
   font-size: 18px;
 }
 
@@ -353,7 +353,6 @@ footer a {
 /* Mobile */
 @media (max-width: 450px) {
   p {
-    line-height: 1.1;
     font-size: 16px;
   }
   .title {
@@ -376,7 +375,7 @@ footer a {
   }
 
   #bio-container p {
-    max-width: 60%;
+    max-width: 75%;
     margin: 10px auto;
   }
 
@@ -388,7 +387,6 @@ footer a {
   .about-container .description {
     margin: 10px auto;
     max-width: 100%;
-    line-height: 24px;
   }
 
   .btn-projects {
