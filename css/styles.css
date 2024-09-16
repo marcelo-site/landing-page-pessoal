@@ -25,6 +25,7 @@
 p {
   line-height: 1.5;
   font-size: 18px;
+  font-weight: 300;
 }
 
 /* General */
@@ -67,9 +68,11 @@ main {
   border-right: 5px solid var(--bio-border-color);
 }
 
-.about-container {
+section {
   background-color: var(--about-bg-color);
-  padding: 50px;
+  padding: 20px 0;
+  margin: 0 50px;
+  border-top: 1px solid var(--border-color);
 }
 
 /* Bio container */
@@ -160,7 +163,7 @@ main {
   border-radius: 5px;
   text-decoration: none;
   transition: 0.5s;
-  margin: 25px 0;
+  margin: 10px 0;
   padding: 12px 10px;
   width: 100%;
   text-align: center;
@@ -195,7 +198,6 @@ main {
   padding-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
-  border-top: 1px solid var(--border-color);
 }
 
 #skills-container {
@@ -207,7 +209,7 @@ main {
 .skills-box {
   flex: 1 1 33%;
   max-width: 33%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .skills-title {
@@ -223,6 +225,53 @@ main {
   margin-right: 10px;
 }
 
+/* portifolio */
+
+.container-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 1rem 0;
+}
+
+.card-project {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px;
+  border: 1px solid #ffffff54;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.card-project img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.desc-project p {
+  line-height: 1.35;
+  margin: 1rem 0;
+}
+
+.card-project a.btn {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+/* certifcados */
 .container-certificates {
   position: relative;
   max-width: 680px;
@@ -331,7 +380,7 @@ main {
 }
 
 .btn-projects {
-  margin: 20px 0;
+  margin-top: 2rem;
   width: 150px;
 }
 
@@ -352,8 +401,10 @@ footer a {
 }
 
 @media (max-width: 960px) {
-  .about-container {
-    padding: 25px;
+  section {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin: 0 20px;
   }
 
   #skils-conatainer {
@@ -370,15 +421,15 @@ footer a {
     grid-template-columns: 240px 1fr;
   }
 
-  .about-container {
-    padding: 20px;
-  }
   .description {
     max-width: 100%;
   }
 
   #skills-container {
     display: block;
+  }
+  .card-project img {
+    height: 300px;
   }
 
   .skills-box {
@@ -389,6 +440,9 @@ footer a {
 @media (max-width: 720px) {
   #container {
     display: block;
+  }
+  .card-project img {
+    height: 300px;
   }
   #bio-container {
     position: static;
@@ -421,18 +475,20 @@ footer a {
     margin: 10px auto;
   }
 
-  .about-container {
+  section {
     text-align: center;
-    padding: 20px;
+    /* padding: 10px ;
+    margin: 0 20px; */
   }
 
-  .about-container .description {
+  section .description {
     margin: 10px auto;
     max-width: 100%;
   }
 
   .btn-projects {
-    margin: 20px auto;
+    margin: 0;
+    margin-top: 20px;
     width: 150px;
   }
 
