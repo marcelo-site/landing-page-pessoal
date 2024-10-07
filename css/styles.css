@@ -448,7 +448,7 @@ footer a {
     height: 300px;
   }
   #bio-container {
-    position: static;
+    position: relative;
     width: 100vw;
     height: auto;
     border-right: none;
@@ -506,4 +506,51 @@ footer a {
   .control-certificates {
     gap: 0;
   }
+}
+
+@media screen and (min-width: 0px) {
+  i[data-title] {
+    position: relative;
+  }
+
+  i[data-title]:hover::after,
+  i[data-title]:focus::after {
+    content: attr(data-title);
+
+    /* position tooltip like the native one */
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: auto;
+    white-space: nowrap;
+
+    /* style tooltip */
+    background-color: #f1f1f1;
+    color: #242424;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    padding: 3px 5px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+aside,
+footer {
+  background-image: url(../img/test3.webp);
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.back-aside {
+  background: rgb(16 23 31 / 72%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }

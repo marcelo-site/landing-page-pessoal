@@ -38,6 +38,7 @@
   </head>
   <body id="container">
     <aside id="bio-container">
+      <div class="back-aside"></div>
       <h2>Marcelo Souza</h2>
       <img id="bio-image" src="img/perfil.png" alt="Matheus Battisti" />
       <p>
@@ -115,41 +116,65 @@
         <div id="skills-container">
           <div class="skills-box">
             <p class="skills-title">Front-end</p>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
+            <i data-title="HTML5" class="devicon-html5-plain colored"></i>
+
+            <i data-title="CSS3" class="devicon-css3-plain colored"></i>
+
+            <i
+              data-title="Javascript"
+              class="devicon-javascript-plain colored"
+            ></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Back-end</p>
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-nodejs-plain-wordmark"></i>
+
+            <i data-title="PHP" class="devicon-php-plain colored"></i>
+
+            <i data-title="NodeJs" class="devicon-nodejs-plain-wordmark"></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Banco de Dados</p>
-            <i class="devicon-mysql-plain colored"></i>
-            <i class="devicon-mongodb-plain colored"></i>
-            <i class="devicon-postgresql-plain colored"></i>
+            <i data-title="Mysql" class="devicon-mysql-plain colored"></i>
+            <i data-title="MongoDB" class="devicon-mongodb-plain colored"></i>
+            <i
+              data-title="Postgresql"
+              class="devicon-postgresql-plain colored"
+            ></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Front-end Frameworks</p>
-            <i class="devicon-react-plain colored"></i>
+
             <i
+              data-title="React | React-native"
+              class="devicon-react-plain colored"
+            ></i>
+            <i
+              data-title="NextJs"
               class="devicon-nextjs-plain colored"
               style="background: #ffffff; border-radius: 50%"
             ></i>
 
-            <i class="devicon-electron-original"></i>
+            <i data-title="ElectronJs" class="devicon-electron-original"></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Back-end Frameworks</p>
-            <i class="devicon-prisma-original"></i>
-            <i class="devicon-mongoose-original"></i>
-            <i class="devicon-express-original"></i>
+
+            <i data-title="Prisma" class="devicon-prisma-original"></i>
+            <i data-title="Mongoose" class="devicon-mongoose-original"></i>
+
+            <i data-title="Express" class="devicon-express-original"></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Mais</p>
-            <i class="devicon-git-plain colored"></i>
-            <i class="devicon-typescript-plain colored"></i>
+            <i data-title="Git" class="devicon-git-plain colored"></i>
+
+            <i data-title="GitHub" class="devicon-github-original"></i>
+
+            <i
+              data-title="Typescript"
+              class="devicon-typescript-plain colored"
+            ></i>
+            <i data-title="wordppres" class="devicon-wordpress-plain"></i>
           </div>
         </div>
       </section>
@@ -159,7 +184,7 @@
         <p class="description">Principais Projetos:</p>
         <div class="container-projects">
           <div class="card-project">
-            <img src="img/chatbot.png" alt="" />
+            <img src="img/chatbot.webp" alt="" />
             <div class="desc-project">
               <h3>Chatbot Whatsapp</h3>
               <p>
@@ -177,7 +202,7 @@
             </div>
           </div>
           <div class="card-project">
-            <img src="img/food-commerce.png" alt="" />
+            <img src="img/food-commerce.webp" alt="" />
             <div class="desc-project">
               <h3>Cardápio Online</h3>
               <p>
@@ -195,7 +220,7 @@
           </div>
 
           <div class="card-project">
-            <img src="img/sccmoda.png" alt="" />
+            <img src="img/sccmoda.webp" alt="" />
             <div class="desc-project">
               <h3>Criação de E-commerces</h3>
               <p>
@@ -212,7 +237,7 @@
             </div>
           </div>
           <div class="card-project">
-            <img src="img/admin.png" alt="" />
+            <img src="img/admin.webp" alt="" />
             <div class="desc-project">
               <h3>Painel Administrativo</h3>
               <p>
@@ -264,6 +289,7 @@
       </section>
     </main>
     <footer>
+      <div class="back-aside"></div>
       Criado por
       <a
         href="https://www.facebook.com/profile.php?id=100015225941991"
