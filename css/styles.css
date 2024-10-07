@@ -8,17 +8,13 @@
 
 /* Variables */
 :root {
-  --main-color: #2828a8;
-  --main-color: #2c2cff;
   --main-color: #2020d8;
   --secondrary-color: #2c2cff;
   --secondrary-color: tomato;
   --main-text-color: #fff;
   --border-color: #999;
-  --bio-bg-color: #1e2a3a;
   --bio-bg-color: #1c2734;
   --bio-border-color: #293544;
-  --about-bg-color: #111821;
   --about-bg-color: #131c27;
 }
 
@@ -72,7 +68,7 @@ main {
 section {
   background-color: var(--about-bg-color);
   padding: 20px 0;
-  margin: 0 50px;
+  margin: 0 40px;
   border-top: 1px solid var(--border-color);
 }
 
@@ -92,8 +88,6 @@ section {
 #bio-image {
   object-fit: cover;
   width: 175px;
-  /* height: 200px; */
-  /* border-radius: 50%; */
   margin-bottom: 25px;
 }
 
@@ -228,11 +222,10 @@ section {
 }
 
 /* portifolio */
-
 .container-projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1.25rem;
   margin: 1rem 0;
 }
 
@@ -245,7 +238,14 @@ section {
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 4rem;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
 }
+
+/* .card-project:hover {
+  transform: scale(1.02);
+  box-shadow: -2px 1px 12px 0px rgba(255, 255, 255, 0.25);
+} */
 
 .card-project img {
   width: 100%;
@@ -255,13 +255,13 @@ section {
 }
 
 .desc-project p {
+  font-size: 1rem;
   line-height: 1.35;
   margin: 1rem 0;
+  text-align: justify;
 }
 
 .card-project a.btn {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
   font-size: 1.25rem;
   font-weight: 500;
   position: absolute;
@@ -480,8 +480,6 @@ footer a {
 
   section {
     text-align: center;
-    /* padding: 10px ;
-    margin: 0 20px; */
   }
 
   section .description {
