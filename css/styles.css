@@ -9,7 +9,6 @@
 /* Variables */
 :root {
   --main-color: #2020d8;
-  --secondrary-color: #2c2cff;
   --secondrary-color: tomato;
   --main-text-color: #fff;
   --border-color: #999;
@@ -241,11 +240,6 @@ section {
   transition: 0.3s all ease-in-out;
   cursor: pointer;
 }
-
-/* .card-project:hover {
-  transform: scale(1.02);
-  box-shadow: -2px 1px 12px 0px rgba(255, 255, 255, 0.25);
-} */
 
 .card-project img {
   width: 100%;
@@ -546,7 +540,7 @@ footer {
 }
 
 .back-aside {
-  background: rgb(16 23 31 / 72%);
+  background: rgb(16 23 31 / 70%);
   position: absolute;
   top: 0;
   left: 0;
