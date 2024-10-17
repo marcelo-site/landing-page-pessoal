@@ -248,10 +248,13 @@ section {
   object-fit: cover;
 }
 
+.desc-project h3 {
+  font-size: 1.5rem;
+}
+
 .desc-project p {
-  font-size: 1rem;
-  line-height: 1.35;
-  margin: 1rem 0;
+  font-size: 1.125rem;
+  margin: 1rem 0 1.5rem;
   text-align: justify;
 }
 
@@ -259,7 +262,7 @@ section {
   font-size: 1.25rem;
   font-weight: 500;
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 10px;
   right: 10px;
   width: calc(100% - 20px);
