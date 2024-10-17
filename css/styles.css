@@ -371,7 +371,7 @@ footer {
   position: sticky;
   bottom: 0;
   z-index: 999;
-  border-top: 4px solid var(--bio-border-color);
+  border-top: 5px solid var(--bio-border-color);
 }
 
 footer a {
