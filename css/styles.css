@@ -67,6 +67,25 @@ section {
   padding: 20px 0;
   margin: 0 40px;
   border-top: 1px solid var(--border-color);
+
+  animation-timeline: view(block 95% 5%);
+
+  animation-name: ani;
+  animation-duration: 0.5s;
+  /* animation-fill-mode: both; */
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0.25;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 /* Bio container */
@@ -197,12 +216,19 @@ section {
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
+  overflow: auto;
+  gap: 1rem;
 }
 
 .skills-box {
   flex: 1 1 33%;
   max-width: 33%;
   margin-bottom: 40px;
+}
+
+.skills-box > div {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .skills-title {
@@ -385,9 +411,6 @@ footer a {
     margin: 0 20px;
   }
 
-  #skils-conatainer {
-    gap: 0.5rem;
-  }
   .skills-box {
     flex: 1 1 50%;
     max-width: calc(50% - 0.5rem);
@@ -405,6 +428,9 @@ footer a {
 
   #skills-container {
     display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
   .card-project img {
     height: 300px;
@@ -428,10 +454,6 @@ footer a {
     height: auto;
     border-right: none;
     border-bottom: 5px solid var(--bio-border-color);
-  }
-
-  #skills-container {
-    display: flex;
   }
 }
 
